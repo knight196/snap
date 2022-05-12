@@ -115,7 +115,7 @@ nav{
     .dropdown-container{
         position:relative;
     .panel{
-        width:200px;
+        width:150px;
         padding:10px;
         top:50px;
         z-index:1;
@@ -188,6 +188,9 @@ nav{
             margin-top:50px;
         }
     }
+.panel{
+width:200px;
+}
 }
 .close-menu,.menu{
     display:none;
