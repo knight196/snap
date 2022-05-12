@@ -1,8 +1,13 @@
 // media queries
 @mixin for-size($size){
 
+    @if $size == tablet{
+        @media (min-width:720px){
+            @content;
+        }
+    }
 
-@if $size == med-screen{
+@else if $size == med-screen{
     @media (min-width:1020px){
         @content;
     }
@@ -129,6 +134,15 @@ nav{
         }
   }
 }
+
+.brand-logo{
+    display:flex;
+    width:100%;
+    img{
+        margin:10px auto;
+    }
+}
+
 @media screen and (max-width:1019px){
 .close-menu,.menu{
     display:block;
@@ -167,7 +181,14 @@ nav{
         }
 }
 
+@include for-size(tablet){
+    .brand-logo{
+        flex-direction: row;
+    }
+}
+
 @include for-size(med-screen){
+    
     .hero{
         display:flex;
         justify-content:center;
@@ -217,7 +238,7 @@ nav{
 .brand-logo{
     margin-top:50px;
     img{
-        width:100px;
+        width:500px;
     }
 }
 
