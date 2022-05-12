@@ -66,12 +66,10 @@ nav .btn {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto;
-}
-
-.brand-logo img {
-  width: 50%;
-  height: 50%;
-  margin: auto 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 0 10px;
 }
 
@@ -128,17 +126,6 @@ nav .btn {
   font-size: 15px;
 }
 
-.brand-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.brand-logo img {
-  margin: 10px auto;
-}
-
 @media screen and (max-width: 1019px) {
   .close-menu, .menu {
     display: block;
@@ -193,11 +180,9 @@ nav .btn {
 }
 
 @media (min-width: 720px) {
-  .brand-logo {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .brand-logo img {
+    width: 50%;
+    height: 50%;
   }
 }
 
@@ -264,13 +249,12 @@ nav .btn {
     display: block;
     height: 500px;
   }
-}
-
-.brand-logo {
-  margin-top: 50px;
-}
-
-.brand-logo img {
-  width: 500px;
+  .brand-logo {
+    margin-top: 50px;
+  }
+  .brand-logo img {
+    width: 500px;
+    margin: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -75,13 +75,8 @@ nav{
     align-items: center;
     justify-content: center;
     margin:30px auto;
-
-    img{
-        width:50%;
-        height:50%;
-        margin:auto 20px;
-        padding:0 10px;
-    }
+    flex-direction: row;
+    padding:0 10px;
 }
 .mobile-hero{
     display:block;
@@ -135,13 +130,7 @@ nav{
   }
 }
 
-.brand-logo{
-    display:flex;
-    width:100%;
-    img{
-        margin:10px auto;
-    }
-}
+
 
 @media screen and (max-width:1019px){
 .close-menu,.menu{
@@ -183,7 +172,10 @@ nav{
 
 @include for-size(tablet){
     .brand-logo{
-        flex-direction: row;
+       img{
+           width:50%;
+           height:50%;
+       }
     }
 }
 
@@ -233,13 +225,14 @@ nav{
     display:block;
     height:500px;
 }
-}
-
 .brand-logo{
     margin-top:50px;
     img{
         width:500px;
+        margin:50px;
     }
+}
+
 }
 
 
