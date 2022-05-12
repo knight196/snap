@@ -108,20 +108,25 @@ nav{
   }
   
   .section.active:after {
-    content: "\⯅";
+    content: "\002bc5";
   }
   
 
     .dropdown-container{
         position:relative;
     .panel{
-        width:150px;
+        width:100%;
         padding:10px;
         top:50px;
         z-index:1;
         background:lightgray;
         position:absolute;
         display:none;
+
+        p{
+            margin:10px auto;
+            font-size: 15px;
+        }
   }
 }
 @media screen and (max-width:1019px){
@@ -153,7 +158,7 @@ nav{
         .dropdown-menu.show{
             pointer-events: auto;
             opacity:1;
-            width:60%;
+            width:50%;
         }
         div{
             display:flex;
@@ -188,9 +193,6 @@ nav{
             margin-top:50px;
         }
     }
-.panel{
-width:200px;
-}
 }
 .close-menu,.menu{
     display:none;

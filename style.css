@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -107,7 +106,7 @@ nav .btn {
 }
 
 .section.active:after {
-  content: "\⯅";
+  content: "\002bc5";
 }
 
 .dropdown-container {
@@ -115,13 +114,18 @@ nav .btn {
 }
 
 .dropdown-container .panel {
-  width: 200px;
+  width: 100%;
   padding: 10px;
   top: 50px;
   z-index: 1;
   background: lightgray;
   position: absolute;
   display: none;
+}
+
+.dropdown-container .panel p {
+  margin: 10px auto;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 1019px) {
